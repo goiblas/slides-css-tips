@@ -43,8 +43,17 @@
 		}
 
 		/* decoration */
-		.reveal pre {
-			box-shadow: none;
+		.reveal:not(.has-vertical-slides) .controls .navigate-right,
+		.reveal:not(.has-vertical-slides) .controls .navigate-left {
+			background-color: #fff;
+			bottom: 0;
+			padding: 13px;
+		}
+		.reveal:not(.has-vertical-slides) .controls .navigate-left {
+			right: 90px;
+		}
+		.reveal:not(.has-vertical-slides) .controls .navigate-right {
+			right: 57px;
 		}
 		</style>
 		<script>	
