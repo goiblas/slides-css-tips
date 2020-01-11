@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -37,6 +37,10 @@
 		 .reveal .slides > section, .reveal .slides > section > section {
 			padding: 0;
 		}
+
+		section {
+			font-size: 1.8rem;
+		}
 		.slides {
 			width: 100vw!important;
 			height: 100vh!important;
@@ -44,16 +48,67 @@
 
 		/* decoration */
 		.reveal:not(.has-vertical-slides) .controls .navigate-right,
-		.reveal:not(.has-vertical-slides) .controls .navigate-left {
+		.reveal:not(.has-vertical-slides) .controls .navigate-left,
+		.reveal .slide-menu-button {
 			background-color: #fff;
 			bottom: 0;
 			padding: 13px;
+		}
+		.reveal.reveal .slide-menu-button {
+			left: 0;
+			bottom: 0;
 		}
 		.reveal:not(.has-vertical-slides) .controls .navigate-left {
 			right: 123px;
 		}
 		.reveal:not(.has-vertical-slides) .controls .navigate-right {
 			right: 57px;
+		}
+		section .full-image {
+			max-height: 90vh;
+		}
+		.container-narrow {
+			width: 70%;
+			margin: auto;
+		}
+		.media {
+			display: flex;
+			width: max-content;
+			margin: auto;
+		}
+		.media__picture {
+			width: 92px;
+			height: 92px;
+			border-radius: 50%;
+			margin-right: 30px;
+			overflow: hidden;
+			margin-top: 5px;
+		}
+		.reveal section .media__picture img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			max-width: none;
+			max-height: none;
+			border: 0;
+			box-shadow: none;
+			margin: 0;
+		}
+		.media__content ul,
+		.media__content li {
+			margin: 0;
+			list-style: none;
+		}
+		.media__content h2 {
+			text-align: left;
+			font-size: 3rem;
+		}
+		.link-goiblas {
+			padding-top: 30px;
+			font-size: 1.3rem;
+		}
+		.opacity-6 {
+			opacity: .6;
 		}
 		</style>
 		<script>	
@@ -70,134 +125,132 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					<h2>s</h2>
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit »S« on your keyboard).
-					</aside>
+				<section data-menu-title="Inicio">
+					<img src="./assets/S18-A1040-Jesus-Olazagoitia.jpg" alt="" class="full-image">
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="QWwpxEm" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="flex &amp;amp; margin">
+				<section data-menu-title="flex + margin: auto">
+					<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="QWwpxEm" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="flex &amp;amp; margin">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/QWwpxEm">
 						flex &amp; margin</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="WNbRZja" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Before &amp;amp; After grid children">
+				<section data-menu-title="Flex children">
+					<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="WNbRZja" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Before &amp;amp; After grid children">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/WNbRZja">
 						Before &amp; After grid children</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="OJPxEwV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Diferentes anchuras en un contendor">
+				<section data-menu-title="WordPress contenedores">
+					<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="OJPxEwV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Diferentes anchuras en un contendor">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/OJPxEwV">
 						Diferentes anchuras en un contendor</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="ZEYXRmv" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Diferentes anchuras en un contendor (grid)">
+				<section data-menu-title="WordPress contenedores grid">
+					<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="ZEYXRmv" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Diferentes anchuras en un contendor (grid)">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/ZEYXRmv">
 						Diferentes anchuras en un contendor (grid)</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="dyPVqJV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Especificidad">
+				<section data-menu-title="Especificidad">
+					<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="dyPVqJV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Especificidad">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/dyPVqJV">
 						Especificidad</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					</p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="KKwXmag" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Avatar">
+				<section data-menu-title="Avatar">
+					<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="KKwXmag" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Avatar">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/KKwXmag">
 						Avatar</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="XWJRxpy" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Selector :not()">
+				<section data-menu-title="Selector :not()">
+					<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="XWJRxpy" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Selector :not()">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/XWJRxpy">
 						Selector :not()</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="yLyXZWx" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Navigation animations">
+				<section data-menu-title="box-shadow vs border">
+					<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="yLyXZWx" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Navigation animations">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/yLyXZWx">
 						Navigation animations</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="wvBrQYp" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Text truncate  flex container">
-						<span>See the Pen <a href="https://codepen.io/goiblas/pen/wvBrQYp">
-						Text truncate  flex container</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
-						on <a href="https://codepen.io">CodePen</a>.</span>
-					  </p>
-				</section>
-				<section>
+				<section data-menu-title="Tips parte 1">
 					<h2></h2>
 					<ol class="js-tips">
 						<li>Flex + margin</li>
 						<li>Grid Children</li>
 						<li>Implementar nuevas alineaciones</li>
 						<li>Grid columns negativos</li>
-						<li>Especificidad: Repetir selector</li>
+						<li>Repetir selector</li>
+						<li>[id="identificador"] vs #identificador</li>
 						<li>!important es una herramienta</li>
 						<li>border-radius & clip-path para crear formas</li>
 						<li>:not() vs sobreescribir propiedades</li>
 						<li>box-shadow vs border</li>
-						<li>Cortar textos dentro de un flex</li>
 					</ol>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="KKwXxXj" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Scrollable table">
+				<section data-menu-title="Flex truncate text">
+						<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="wvBrQYp" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Text truncate  flex container">
+						<span>See the Pen <a href="https://codepen.io/goiblas/pen/wvBrQYp">
+						Text truncate  flex container</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
+						on <a href="https://codepen.io">CodePen</a>.</span>
+						</p>
+				</section>
+				<section data-menu-title="Scrollable table">
+						<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="KKwXxXj" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Scrollable table">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/KKwXxXj">
 						Scrollable table</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="yLyoYMG" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="SVG Icons">
+				<section data-menu-title="SVG & currentColor">
+						<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="yLyoYMG" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="SVG Icons">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/yLyoYMG">
 						SVG Icons</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="zYxdYMv" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Landing">
+				<section data-menu-title="Landing">
+						<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="zYxdYMv" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Landing">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/zYxdYMv">
 						Landing</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="KKwmxqg" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Grid cards">
+				<section data-menu-title="Grid cards">
+						<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="KKwmxqg" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Grid cards">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/KKwmxqg">
 						Grid cards</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="MWYmqNQ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Grid cards extended">
+				<section data-menu-title="Order & grid">
+						<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="MWYmqNQ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Grid cards extended">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/MWYmqNQ">
 						Grid cards extended</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="QWwqVeW" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Aspect ratio">
+				<section data-menu-title="Aspect ratio">
+						<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="QWwqVeW" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Aspect ratio">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/QWwqVeW">
 						Aspect ratio</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<ol class="js-tips">
+				<section data-menu-title="Tips parte 2">
+						<ol class="js-tips">
+						<li>Cortar textos dentro de un flex</li>
 						<li>Tablas con scroll</li>
 						<li>SVG + currentColor</li>
 						<li>Calc para combinar unidades</li>
@@ -207,36 +260,36 @@
 						<li>padding para mantener el aspecto</li>
 					</ol>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="NWPpzeL" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Modal">
+				<section data-menu-title="Modal con transform">
+						<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="NWPpzeL" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Modal">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/NWPpzeL">
 						Modal</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="abzEYxM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Accordion ">
+				<section data-menu-title="Acordeon">
+						<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="abzEYxM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Accordion ">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/abzEYxM">
 						Accordion </a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="xxbLZKg" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Snackbar max-content">
+				<section data-menu-title="max-content & supports">
+						<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="xxbLZKg" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Snackbar max-content">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/xxbLZKg">
 						Snackbar max-content</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="PowOorJ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Font size with CSS Variables">
+				<section data-menu-title="Font size con Variables CSS">
+						<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="PowOorJ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Font size with CSS Variables">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/PowOorJ">
 						Font size with CSS Variables</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<ol class="js-tips">
+				<section data-menu-title="Tips parte 2">
+						<ol class="js-tips">
 						<li>Translate relativo al tamaño</li>
 						<li>Scale -1</li>
 						<li>max-content</li>
@@ -244,56 +297,104 @@
 						<li>Variables CSS para tamaño de texto</li> 
 					</ol>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="RwNxMjb" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Animation paused + delay negative">
+				<section data-menu-title="Animated paused & delay">
+						<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="RwNxMjb" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Animation paused + delay negative">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/RwNxMjb">
 						Animation paused + delay negative</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="RwNgEvO" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Grid system">
+				<section data-menu-title="Grid system ">
+						<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="RwNgEvO" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Grid system">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/RwNgEvO">
 						Grid system</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="PowQVMV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Gradient border button">
-						<span>See the Pen <a href="https://codepen.io/goiblas/pen/PowQVMV">
-						Gradient border button</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
-						on <a href="https://codepen.io">CodePen</a>.</span>
-					  </p>
-				</section>
-				<section>
-					<p class="codepen" data-editable="true" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="goiblas" data-slug-hash="WNbZVaB" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Css Variables color &amp;amp; transition">
+				<section data-menu-title="Colors & Variables CSS">
+						<p class="codepen" data-editable="true" data-theme-id="dark" data-height="265"  data-default-tab="css,result" data-user="goiblas" data-slug-hash="WNbZVaB" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Css Variables color &amp;amp; transition">
 						<span>See the Pen <a href="https://codepen.io/goiblas/pen/WNbZVaB">
 						Css Variables color &amp; transition</a> by goiblas (<a href="https://codepen.io/goiblas">@goiblas</a>)
 						on <a href="https://codepen.io">CodePen</a>.</span>
 					  </p>
 				</section>
-				<section>
-					<ol class="js-tips">
+				<section data-menu-title="Tips parte 3">
+						<ol class="js-tips">
 						<li>Animation paused + delay negativo</li>
-						<li>Background para bordes y textos</li>
 						<li>Gap con margen + Variables CSS</li>
 						<li>Separa color en Variables CSS</li>
 						<li>Animar Variables CSS</li> 
 					</ol>
 				</section>
 				<section>
-					<ul>
-						<li><a href="https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/</a></li>
-					</ul>
+						<div class="container-narrow">
+							<div class="media">
+								<div class="media__picture">
+									<img src="./assets/avatar.jpg" alt="">
+								</div>
+								<div class="media__content">
+									<h2>Gracias 👋</h2>
+									<ul>
+										<li><strong>Jesús Olazagoitia Blasco</strong></li>
+										<li class="opacity-6">Diseñador & Desarrollador frontend</li>
+										<li class="link-goiblas"><a href="https://goiblas.com">goiblas.com</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+				<section>
+					<div class="container-narrow">
+						<h2>Enlaces de Interés</h2>
+						<ul>
+							<li><a href="https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/" target="_blank" rel="noopener noreferrer">Auto-Sizing Columns in CSS Grid: `auto-fill` vs `auto-fit`</a></li>
+							<li><a href="https://wordpress.tv/2019/10/22/marta-rey-barroso-i-cant-believe-its-css/" target="_blank" rel="noopener noreferrer">Marta Rey Barroso: I can’t believe it’s CSS</a></li>
+							<li><a href="https://www.30secondsofcode.org/css/p/1" target="_blank" rel="noopener noreferrer">30 seconds of CSS</a></li>
+							<li><a href="https://css-tricks.com/snippets/" target="_blank" rel="noopener noreferrer">CSS Tricks - Snippets</a></li>
+							<li><a href="https://www.youtube.com/watch?v=vs34f9FiHps" target="_blank" rel="noopener noreferrer">Lea Verou - CSS secrets</a></li>
+							<li><a href="https://www.youtube.com/watch?v=J1J4oNcpcSM" target="_blank" rel="noopener noreferrer">Lea Verou - Even more CSS secrets</a></li>
+							<li><a href="https://www.youtube.com/watch?v=JSaMl2OKjfQ" target="_blank" rel="noopener noreferrer">Lea Verou - The Humble Border-Radius</a></li>
+							<li><a href="https://9elements.github.io/fancy-border-radius/" target="_blank" rel="noopener noreferrer">Tool - Fancy border radius </a></li>
+							<li><a href="https://web.dev/next-gen-css-2019/" target="_blank" rel="noopener noreferrer">Chrome dev summit - Next-generation web styling</a></li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<div class="container-narrow">
+						<h2>Otros ejemplos</h2>
+						<ul>
+							<li><a href="https://codepen.io/goiblas/pen/MLJXgL" target="_blank" rel="noopener noreferrer">Input slider personalizado con Variables CSS</a></li>
+							<li><a href="https://codepen.io/goiblas/pen/PowQVMV" target="_blank" rel="noopener noreferrer">Botones con degradado en los bordes</a></li>
+							<li><a href="https://codepen.io/goiblas/pen/Baywdax" target="_blank" rel="noopener noreferrer">Contenedores con márgenes negativos</a></li>
+							<li><a href="https://codepen.io/goiblas/pen/NWPpzjY" target="_blank" rel="noopener noreferrer">Sticky footer</a></li>
+							<li><a href="https://codepen.io/goiblas/pen/QYpyrq" target="_blank" rel="noopener noreferrer">Theme con variables CSS</a></li>
+							<li><a href="https://codepen.io/goiblas/pen/bzwGvW" target="_blank" rel="noopener noreferrer">Variables CSS introducción</a></li>
+							<li><a href="https://codepen.io/goiblas/pen/WPpPoz" target="_blank" rel="noopener noreferrer">Web component personalización</a></li>
+							<li><a href="https://codepen.io/goiblas/pen/VOEoLM" target="_blank" rel="noopener noreferrer">Contenedores hasta el final de la página</a></li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<div class="container-narrow">
+						<div class="media">
+							<div class="media__picture">
+								<img src="./assets/avatar.jpg" alt="">
+							</div>
+							<div class="media__content">
+								<h2>Gracias 👋</h2>
+								<ul>
+									<li><strong>Jesús Olazagoitia Blasco</strong></li>
+									<li class="opacity-6">Diseñador & Desarrollador frontend</li>
+									<li class="link-goiblas"><a href="https://goiblas.com">goiblas.com</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</section>
 			</div>
 		</div>
 		<script src="js/reveal.js"></script>
 		<script>
-			const aboutMe = `
-				<h2>Sobre mi</h2>
-				<p>Hola mundo!</p>
-			`
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
@@ -305,10 +406,7 @@
 				transitionSpeed: 'fast',
 				menu: {
 					themes:true,
-					numbers: true,
-					custom: [
-						{ title: 'Links', icon: '<i class="fa fa-info">', content: aboutMe }
-					]
+					numbers: true
 				},
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
